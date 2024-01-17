@@ -1,4 +1,5 @@
-def insertion_sort(lst):
+def insertion_sort(ilst):
+    lst = ilst[:]
     for i in range(1, len(lst)):
         key = lst[i]
         j = i - 1
@@ -9,7 +10,8 @@ def insertion_sort(lst):
     return lst
 
 
-def merge_sort(arr):
+def merge_sort(iarr):
+    arr = iarr[:]
     if len(arr) <= 1:
         return arr
 
@@ -47,7 +49,8 @@ def merge(left, right):
     return merged
 
 
-def timsort(lst):
+def timsort(ilst):
+    lst = ilst[:]
     return lst.sort()
 
 
